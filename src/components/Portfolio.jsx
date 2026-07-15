@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, MapPin, Building, CheckCircle2 } from 'lucide-react';
 
@@ -110,6 +110,16 @@ const ProjectCard = ({ p, dark }) => (
 const Portfolio = () => {
   const [tab, setTab] = useState('ongoing');
 
+  useEffect(() => {
+    const els = document.querySelectorAll('.portfolio-scroll-reveal');
+    const obs = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('is-visible'); }),
+      { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
+    );
+    els.forEach(el => obs.observe(el));
+    return () => obs.disconnect();
+  }, [tab]);
+
   return (
     <section id="projects" className="w-full py-24" style={{ background: '#FAF7F2' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -146,7 +156,7 @@ const Portfolio = () => {
         {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {(tab === 'ongoing' ? ONGOING : COMPLETED).map((p, i) => (
-            <div key={p.title} className={`scroll-reveal stagger-${i+1}`}>
+            <div key={p.title} className={`portfolio-scroll-reveal scroll-reveal stagger-${i+1}`}>
               <ProjectCard p={p} dark={false} />
             </div>
           ))}

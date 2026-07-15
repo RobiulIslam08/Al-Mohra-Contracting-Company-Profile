@@ -327,7 +327,7 @@ const ApplicationForm = () => {
     } else {
       // নেটওয়ার্ক বা সার্ভার ডাউন থাকলে
       alert(t.serverErr || "Server connection error.");
-    }
+    }c
   } finally {
     setLoading(false);
   }

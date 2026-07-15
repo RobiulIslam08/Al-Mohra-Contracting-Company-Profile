@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Phone, Mail, Menu, X } from 'lucide-react';
-import logoSvg from '../assets/logo.svg';
+import { Phone, Mail, Menu, X, MapPin } from 'lucide-react';
+import logoImg from '../assets/almhora.jpeg';
 
 const navLinks = [
   { label: 'Home',       href: '/',           id: 'home' },
@@ -48,30 +48,36 @@ const Header = () => {
         style={{ animation: 'slideInNavbar 0.5s ease both' }}
       >
         {/* Top Info Bar */}
-        <div className={`transition-all duration-500 overflow-hidden border-b border-[#0B1A33]/5 hidden lg:block ${
+        <div className={`transition-all duration-500 overflow-hidden hidden lg:block ${
           isScrolled ? 'h-0 opacity-0 pointer-events-none' : 'h-10 opacity-100'
         }`}
-          style={{ background: '#FAF7F2' }}
+          style={{ background: '#0B1A33' }}
         >
-          <div className="max-w-7xl mx-auto px-4 sm:px-8 h-full flex items-center justify-end gap-6">
-            <a href="tel:+966565882482"
-              className="flex items-center gap-1.5 text-[11px] font-semibold tracking-wider transition-colors"
-              style={{ color: '#0B1A33' }}
-              onMouseEnter={e => e.currentTarget.style.color = '#C9962C'}
-              onMouseLeave={e => e.currentTarget.style.color = '#0B1A33'}
-            >
-              <Phone size={11} style={{ color: '#C9962C' }} />
-              +966 565 882 482
-            </a>
-            <a href="mailto:mohra.ariful@gmail.com"
-              className="flex items-center gap-1.5 text-[11px] font-semibold tracking-wider transition-colors"
-              style={{ color: '#0B1A33' }}
-              onMouseEnter={e => e.currentTarget.style.color = '#C9962C'}
-              onMouseLeave={e => e.currentTarget.style.color = '#0B1A33'}
-            >
-              <Mail size={11} style={{ color: '#C9962C' }} />
-              mohra.ariful@gmail.com
-            </a>
+          <div className="max-w-7xl mx-auto px-4 sm:px-8 h-full flex items-center justify-between">
+            <div className="flex items-center gap-1.5 text-[11px] font-semibold tracking-wider" style={{ color: 'rgba(255,255,255,0.85)' }}>
+              <MapPin size={11} style={{ color: '#C9962C' }} />
+              Office Address 2456 Al Wadeea, Al Olaya Dist, 12222, Riyadh, KSA
+            </div>
+            <div className="flex items-center gap-6">
+              <a href="tel:+966565882482"
+                className="flex items-center gap-1.5 text-[11px] font-semibold tracking-wider transition-colors"
+                style={{ color: 'rgba(255,255,255,0.85)' }}
+                onMouseEnter={e => e.currentTarget.style.color = '#C9962C'}
+                onMouseLeave={e => e.currentTarget.style.color = 'rgba(255,255,255,0.85)'}
+              >
+                <Phone size={11} style={{ color: '#C9962C' }} />
+                +966 565 882 482
+              </a>
+              <a href="mailto:almohracc@gmail.com"
+                className="flex items-center gap-1.5 text-[11px] font-semibold tracking-wider transition-colors"
+                style={{ color: 'rgba(255,255,255,0.85)' }}
+                onMouseEnter={e => e.currentTarget.style.color = '#C9962C'}
+                onMouseLeave={e => e.currentTarget.style.color = 'rgba(255,255,255,0.85)'}
+              >
+                <Mail size={11} style={{ color: '#C9962C' }} />
+                almohracc@gmail.com
+              </a>
+            </div>
           </div>
         </div>
 
@@ -86,19 +92,9 @@ const Header = () => {
               <div className="relative">
                 <div className="absolute -inset-1 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                   style={{ background: 'rgba(201,150,44,0.1)', filter: 'blur(8px)' }} />
-                <img src={logoSvg} alt="Al Mohra Contracting Company Logo"
-                  className="relative w-10 h-10 lg:w-12 lg:h-12 object-contain rounded-xl transition-transform duration-300 group-hover:scale-105"
+                <img src={logoImg} alt="Al Mohra Contracting Company Logo"
+                  className="relative h-10 lg:h-12 w-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-105"
                 />
-              </div>
-              <div className="flex flex-col leading-tight">
-                <span className="font-black tracking-wider uppercase text-[#0B1A33]"
-                  style={{ fontSize: 'clamp(0.7rem, 1.4vw, 0.9rem)', fontFamily: 'Playfair Display, serif', letterSpacing: '0.08em' }}>
-                  AL MOHRA <span style={{ color: '#C9962C' }}>CONTRACTING</span>
-                </span>
-                <span className="text-[9px] tracking-widest uppercase hidden sm:block"
-                  style={{ color: 'rgba(11,26,51,0.6)' }}>
-                  Building Excellence · CR: 7053500273
-                </span>
               </div>
             </Link>
 
@@ -127,7 +123,7 @@ const Header = () => {
                 <Phone size={13} style={{ color: '#C9962C' }} />
                 Call Us
               </a>
-              <Link to="/contact" className="btn-gold text-xs px-5 py-2.5" style={{ borderRadius: '10px' }}>
+              <Link to="/careers" className="btn-gold text-xs px-5 py-2.5" style={{ borderRadius: '10px' }}>
                 Apply Online
               </Link>
             </div>
@@ -180,7 +176,7 @@ const Header = () => {
                 <Phone size={14} style={{ color: '#C9962C' }} />
                 +966 502 475 835
               </a>
-              <Link to="/contact" onClick={() => setIsMenuOpen(false)}
+              <Link to="/careers" onClick={() => setIsMenuOpen(false)}
                 className="btn-gold w-full flex items-center justify-center text-xs py-3.5 rounded-xl"
               >
                 Apply Online

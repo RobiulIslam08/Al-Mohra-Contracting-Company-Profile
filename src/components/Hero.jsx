@@ -106,7 +106,7 @@ const Hero = () => {
                   View Manpower Categories
                   <ArrowRight size={16} />
                 </Link>
-                <Link to="/contact" className="btn-outline-gold">
+                <Link to="/careers" className="btn-outline-gold">
                   Apply Online
                 </Link>
               </div>
