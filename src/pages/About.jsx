@@ -19,11 +19,6 @@ const PageHero = ({ title, sub, label }) => (
       </h1>
       <p className="text-sm max-w-xl mx-auto" style={{ color: 'rgba(255,255,255,0.6)' }}>{sub}</p>
     </div>
-    <div className="section-divider-wave">
-      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style={{ height: '50px' }}>
-        <path d="M0,60 C480,0 960,0 1440,60 L1440,60 L0,60 Z" fill="#FAF7F2" />
-      </svg>
-    </div>
   </section>
 );
 

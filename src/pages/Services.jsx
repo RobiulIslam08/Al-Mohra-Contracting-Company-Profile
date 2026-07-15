@@ -13,14 +13,11 @@ const PageHero = ({ title, sub, label }) => (
     <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <p className="section-label mb-4">{label}</p>
       <h1 className="text-white font-bold mb-4" style={{ fontFamily: 'Playfair Display, serif', fontSize: 'clamp(2.2rem, 5vw, 3.8rem)' }}>
-        {title}
+        {title.split(' ')[0]} <span style={{ color: '#C9962C' }}>{title.substring(title.indexOf(' ') + 1)}</span>
       </h1>
-      <p className="text-sm max-w-xl mx-auto" style={{ color: 'rgba(255,255,255,0.6)' }}>{sub}</p>
-    </div>
-    <div className="section-divider-wave">
-      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style={{ height: '50px' }}>
-        <path d="M0,60 C480,0 960,0 1440,60 L1440,60 L0,60 Z" fill="#FAF7F2" />
-      </svg>
+      <p className="text-sm max-w-xl mx-auto" style={{ color: 'rgba(255,255,255,0.6)' }}>
+        {sub}
+      </p>
     </div>
   </section>
 );

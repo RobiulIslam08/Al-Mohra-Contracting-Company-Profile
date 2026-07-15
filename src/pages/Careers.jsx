@@ -16,12 +16,6 @@ const PageHero = () => (
         Build your career with one of Saudi Arabia's premier contracting and manpower supply firms. We value skill, dedication, and integrity.
       </p>
     </div>
-    <div className="section-divider-wave">
-      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style={{ height: '50px' }}>
-        <path d="M0,60 C480,0 960,0 1440,60 L1440,60 L0,60 Z"
-          style={{ fill: '#FAF7F2' }} />
-      </svg>
-    </div>
   </section>
 );
 

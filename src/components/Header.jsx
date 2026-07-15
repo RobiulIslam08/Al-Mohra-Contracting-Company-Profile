@@ -3,42 +3,10 @@ import { Link, useLocation } from 'react-router-dom';
 import { Phone, Mail, ChevronDown, Menu, X, Building2 } from 'lucide-react';
 import logoSvg from '../assets/logo.svg';
 
-const SERVICES_MENU = [
-  {
-    group: 'Manpower Solutions',
-    items: [
-      { label: 'Steel Manpower', href: '/services#steel-manpower' },
-      { label: 'MEP & Technical Supervision', href: '/services#mep' },
-      { label: 'Civil & Construction Manpower', href: '/services#civil' },
-      { label: 'Mechanical & Industrial Division', href: '/services#mechanical' },
-      { label: 'Heavy Equipment & Transport', href: '/services#heavy-equipment' },
-      { label: 'HSE & Support Services', href: '/services#hse-support' },
-    ],
-  },
-  {
-    group: 'Contracting Services',
-    items: [
-      { label: 'Structural Steel Works', href: '/services#structural-steel' },
-      { label: 'Industrial & Heavy Duty Steel', href: '/services#industrial-steel' },
-      { label: 'Architectural & Finishing Steel', href: '/services#architectural-steel' },
-      { label: 'Telecommunication & Infrastructure', href: '/services#telecom' },
-      { label: 'Renovation & Maintenance', href: '/services#renovation' },
-    ],
-  },
-  {
-    group: 'Facility Management',
-    items: [
-      { label: 'Commercial & Industrial Cleaning', href: '/services#commercial-cleaning' },
-      { label: 'Hospital & Government Cleaning', href: '/services#hospital-cleaning' },
-      { label: 'Catering & Support Services', href: '/services#catering' },
-    ],
-  },
-];
-
 const navLinks = [
   { label: 'Home',       href: '/',           id: 'home' },
   { label: 'About Us',   href: '/about',       id: 'about' },
-  { label: 'Services',   href: '/services',    id: 'services', hasMega: true },
+  { label: 'Services',   href: '/services',    id: 'services' },
   { label: 'Projects',   href: '/projects',    id: 'projects' },
   { label: 'Compliance', href: '/compliance',  id: 'compliance' },
   { label: 'Careers',    href: '/careers',     id: 'careers' },
@@ -81,24 +49,24 @@ const Header = () => {
         style={{ animation: 'slideInNavbar 0.5s ease both' }}
       >
         {/* Top Info Bar */}
-        <div className={`transition-all duration-500 overflow-hidden border-b border-white/5 ${
-          isScrolled ? 'h-0 opacity-0 pointer-events-none' : 'h-8 opacity-100'
+        <div className={`transition-all duration-500 overflow-hidden border-b border-white/5 hidden lg:block ${
+          isScrolled ? 'h-0 opacity-0 pointer-events-none' : 'h-10 opacity-100'
         }`}
           style={{ background: 'rgba(6,14,28,0.95)' }}
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-8 h-full flex items-center justify-end gap-6">
             <a href="tel:+966565882482"
-              className="flex items-center gap-1.5 text-[11px] font-semibold tracking-wider transition-colors hidden md:flex"
+              className="flex items-center gap-1.5 text-[11px] font-semibold tracking-wider transition-colors"
               style={{ color: 'rgba(201,150,44,0.85)' }}
             >
-              <Phone size={10} />
+              <Phone size={11} />
               +966 565 882 482
             </a>
             <a href="mailto:mohra.ariful@gmail.com"
               className="flex items-center gap-1.5 text-[11px] font-semibold tracking-wider transition-colors"
               style={{ color: 'rgba(201,150,44,0.85)' }}
             >
-              <Mail size={10} />
+              <Mail size={11} />
               mohra.ariful@gmail.com
             </a>
           </div>
@@ -107,7 +75,7 @@ const Header = () => {
         {/* Main Nav */}
         <div className="w-full px-4 sm:px-8 lg:px-12">
           <div className={`flex items-center justify-between max-w-7xl mx-auto transition-all duration-500 ${
-            isScrolled ? 'h-16' : 'h-20'
+            isScrolled ? 'h-16' : 'h-16 lg:h-20'
           }`}>
 
             {/* Logo */}
@@ -268,7 +236,7 @@ const Header = () => {
       </header>
 
       {/* Fixed height spacer */}
-      <div className="w-full" style={{ height: '88px' }} />
+      <div className="w-full h-16 lg:h-[120px]" />
     </>
   );
 };

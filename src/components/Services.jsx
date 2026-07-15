@@ -50,13 +50,6 @@ const Services = () => {
   return (
     <section id="services" className="w-full py-24 relative"
       style={{ background: 'linear-gradient(180deg, #060e1c 0%, #0B1A33 100%)' }}>
-      {/* Top wave */}
-      <div className="absolute top-0 left-0 right-0 overflow-hidden leading-0">
-        <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style={{ height: '60px', transform: 'rotate(180deg)' }}>
-          <path d="M0,60 C360,0 1080,0 1440,60 L1440,60 L0,60 Z" fill="#FAF7F2" />
-        </svg>
-      </div>
-
       <div className="orb orb-gold absolute" style={{ width: '400px', height: '400px', top: 0, left: '10%', opacity: 0.08, animationDuration: '20s' }} />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
@@ -98,7 +91,7 @@ const Services = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {tab.cards.map((card, i) => (
             <div key={card.title}
-              className={`service-card p-6 scroll-reveal stagger-${i+1}`}
+              className="service-card p-6"
               style={{ background: 'rgba(20,36,69,0.7)', border: '1px solid rgba(201,150,44,0.12)' }}>
               <div className="icon-wrap w-10 h-10 rounded-xl flex items-center justify-center mb-4"
                 style={{ background: 'rgba(201,150,44,0.12)', border: '1px solid rgba(201,150,44,0.2)' }}>

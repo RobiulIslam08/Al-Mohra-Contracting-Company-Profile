@@ -16,12 +16,6 @@ const PageHero = () => (
         Ready to discuss your project requirements? Our team is available to help you with manpower, contracting, and facility management solutions.
       </p>
     </div>
-    <div className="section-divider-wave">
-      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style={{ height: '50px' }}>
-        <path d="M0,60 C480,0 960,0 1440,60 L1440,60 L0,60 Z"
-          style={{ fill: 'linear-gradient(135deg, #0B1A33, #060e1c)' }} fill="#0B1A33" />
-      </svg>
-    </div>
   </section>
 );
 
