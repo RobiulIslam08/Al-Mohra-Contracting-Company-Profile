@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="12" fill="#0B1A33"/>
+  <rect width="64" height="64" rx="12" fill="none" stroke="#C9962C" stroke-width="1.5"/>
+  <!-- A building monogram -->
+  <path d="M14 50 L28 14 L32 14 L18 50 Z" fill="#C9962C"/>
+  <path d="M50 50 L36 14 L32 14 L46 50 Z" fill="#C9962C"/>
+  <rect x="19" y="33" width="26" height="5" fill="#C9962C"/>
+  <path d="M30 14 L32 9 L34 14 Z" fill="#C9962C"/>
+  <rect x="31" y="10" width="2.5" height="2.5" fill="#0B1A33" rx="0.3"/>
+  <rect x="20" y="24" width="3" height="3" fill="#0B1A33" rx="0.3"/>
+  <rect x="41" y="24" width="3" height="3" fill="#0B1A33" rx="0.3"/>
+</svg>

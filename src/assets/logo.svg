@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- Navy background circle -->
+  <circle cx="60" cy="60" r="58" fill="#0B1A33"/>
+  <circle cx="60" cy="60" r="58" fill="none" stroke="#C9962C" stroke-width="2"/>
+  
+  <!-- Building/Skyline "A" monogram -->
+  <!-- Left leg of A -->
+  <path d="M28 88 L50 30 L60 30 L38 88 Z" fill="#C9962C"/>
+  <!-- Right leg of A -->
+  <path d="M92 88 L70 30 L60 30 L82 88 Z" fill="#C9962C"/>
+  <!-- Crossbar of A -->
+  <rect x="37" y="58" width="46" height="8" fill="#C9962C"/>
+  <!-- Building windows on left leg -->
+  <rect x="34" y="44" width="5" height="5" fill="#0B1A33" rx="0.5"/>
+  <rect x="34" y="52" width="5" height="5" fill="#0B1A33" rx="0.5"/>
+  <!-- Building windows on right leg -->
+  <rect x="81" y="44" width="5" height="5" fill="#0B1A33" rx="0.5"/>
+  <rect x="81" y="52" width="5" height="5" fill="#0B1A33" rx="0.5"/>
+  <!-- Rooftop accent on top of A -->
+  <path d="M56 30 L60 22 L64 30 Z" fill="#C9962C"/>
+  <!-- Small window at top peak -->
+  <rect x="58" y="24" width="4" height="4" fill="#0B1A33" rx="0.3"/>
+</svg>
