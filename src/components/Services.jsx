@@ -49,30 +49,30 @@ const Services = () => {
 
   return (
     <section id="services" className="w-full py-24 relative"
-      style={{ background: 'linear-gradient(180deg, #060e1c 0%, #0B1A33 100%)' }}>
-      <div className="orb orb-gold absolute" style={{ width: '400px', height: '400px', top: 0, left: '10%', opacity: 0.08, animationDuration: '20s' }} />
+      style={{ background: '#ffffff' }}>
+      <div className="orb orb-gold absolute" style={{ width: '400px', height: '400px', top: 0, left: '10%', opacity: 0.04, animationDuration: '20s' }} />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
         {/* Header */}
         <div className="text-center mb-12 scroll-reveal">
           <p className="section-label mb-4">What We Do</p>
-          <h2 className="section-title text-white mb-4">
+          <h2 className="section-title-dark mb-4">
             Our Core <span style={{ color: '#C9962C' }}>Service Divisions</span>
           </h2>
           <span className="gold-divider mx-auto block mb-6" />
-          <p className="text-sm max-w-2xl mx-auto" style={{ color: 'rgba(255,255,255,0.55)' }}>
+          <p className="text-sm max-w-2xl mx-auto" style={{ color: '#5a6a82' }}>
             Three integrated service divisions delivering end-to-end solutions across Saudi Arabia's construction and industrial sectors.
           </p>
         </div>
 
         {/* Tabs */}
         <div className="flex flex-col sm:flex-row gap-3 mb-10 p-2 rounded-2xl max-w-2xl mx-auto scroll-reveal"
-          style={{ background: 'rgba(20,36,69,0.6)', border: '1px solid rgba(201,150,44,0.12)' }}>
+          style={{ background: 'rgba(11,26,51,0.04)', border: '1px solid rgba(11,26,51,0.08)' }}>
           {TABS.map((t) => (
             <button key={t.id} onClick={() => setActiveTab(t.id)}
               className={`service-tab flex-1 flex items-center justify-center gap-2 py-3 px-4 text-xs font-bold tracking-wider uppercase transition-all ${activeTab === t.id ? 'active' : ''}`}
               style={{
-                color: activeTab === t.id ? '#C9962C' : 'rgba(255,255,255,0.55)',
+                color: activeTab === t.id ? '#C9962C' : 'rgba(11,26,51,0.65)',
                 border: `1px solid ${activeTab === t.id ? 'rgba(201,150,44,0.4)' : 'transparent'}`,
               }}
             >
@@ -83,7 +83,7 @@ const Services = () => {
         </div>
 
         {/* Tab sub-label */}
-        <p className="text-center text-xs tracking-wider mb-10 scroll-reveal" style={{ color: 'rgba(201,150,44,0.6)' }}>
+        <p className="text-center text-xs tracking-wider mb-10 scroll-reveal" style={{ color: '#C9962C' }}>
           {tab.sub}
         </p>
 
@@ -92,15 +92,15 @@ const Services = () => {
           {tab.cards.map((card, i) => (
             <div key={card.title}
               className="service-card p-6"
-              style={{ background: 'rgba(20,36,69,0.7)', border: '1px solid rgba(201,150,44,0.12)' }}>
+              style={{ background: '#FAF7F2', border: '1.5px solid rgba(11,26,51,0.08)', boxShadow: '0 8px 32px rgba(11,26,51,0.04)' }}>
               <div className="icon-wrap w-10 h-10 rounded-xl flex items-center justify-center mb-4"
                 style={{ background: 'rgba(201,150,44,0.12)', border: '1px solid rgba(201,150,44,0.2)' }}>
                 <tab.icon size={18} style={{ color: '#C9962C' }} />
               </div>
-              <h3 className="font-bold text-white mb-2" style={{ fontFamily: 'Playfair Display, serif', fontSize: '1.05rem' }}>
+              <h3 className="font-bold mb-2" style={{ fontFamily: 'Playfair Display, serif', fontSize: '1.05rem', color: '#0B1A33' }}>
                 {card.title}
               </h3>
-              <p className="text-sm leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.55)' }}>{card.desc}</p>
+              <p className="text-sm leading-relaxed mb-4" style={{ color: 'rgba(11,26,51,0.65)' }}>{card.desc}</p>
               <div className="flex flex-wrap gap-2">
                 {card.tags.map(tag => (
                   <span key={tag} className="text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-lg"

@@ -82,13 +82,13 @@ const Terms = () => (
       </div>
 
       {/* Commitment closing */}
-      <div className="mt-12 p-8 rounded-2xl text-center scroll-reveal max-w-2xl mx-auto"
-        style={{ background: 'linear-gradient(135deg, #0B1A33, #142445)', border: '1px solid rgba(201,150,44,0.2)' }}>
-        <p className="text-white font-bold text-lg mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Our Commitment</p>
-        <p className="text-sm leading-relaxed italic" style={{ color: 'rgba(255,255,255,0.7)', fontFamily: 'Playfair Display, serif' }}>
+      <div className="mt-12 p-8 rounded-2xl text-center scroll-reveal max-w-2xl mx-auto bg-white"
+        style={{ border: '1.5px solid rgba(11,26,51,0.08)', boxShadow: '0 8px 32px rgba(11,26,51,0.04)' }}>
+        <p className="font-bold text-lg mb-3" style={{ fontFamily: 'Playfair Display, serif', color: '#0B1A33' }}>Our Commitment</p>
+        <p className="text-sm leading-relaxed italic" style={{ color: 'rgba(11,26,51,0.7)', fontFamily: 'Playfair Display, serif' }}>
           "We are committed to delivering reliable, skilled, and disciplined manpower with professionalism, safety, and responsibility."
         </p>
-        <p className="mt-4 text-xs" style={{ color: 'rgba(201,150,44,0.6)' }}>
+        <p className="mt-4 text-xs font-semibold" style={{ color: '#C9962C' }}>
           — Al Mohra Contracting Company — Executive Manager, Mr. Ariful Islam
         </p>
       </div>

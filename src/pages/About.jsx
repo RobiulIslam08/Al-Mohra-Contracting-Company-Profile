@@ -44,19 +44,19 @@ const VisionaryLeadership = () => {
 
   return (
     <section id="leadership" className="w-full py-24 relative overflow-hidden"
-      style={{ background: 'linear-gradient(135deg, #060e1c, #0B1A33)' }}>
-      <div className="orb orb-gold absolute" style={{ width: '500px', height: '500px', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', opacity: 0.07 }} />
+      style={{ background: '#ffffff' }}>
+      <div className="orb orb-gold absolute" style={{ width: '500px', height: '500px', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', opacity: 0.04 }} />
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <p className="section-label mb-4">Our Visionary Leadership</p>
-          <h2 className="section-title text-white mb-4">
+          <h2 className="section-title-dark mb-4">
             <span style={{ color: '#C9962C' }}>Guided</span> By a Visionary Kingdom
           </h2>
           <span className="gold-divider mx-auto block mb-6" />
-          <p className="text-sm max-w-xl mx-auto" style={{ color: 'rgba(255,255,255,0.55)' }}>
+          <p className="text-sm max-w-xl mx-auto" style={{ color: '#5a6a82' }}>
             Al Mohra Contracting Company is honored to operate in alignment with the noble vision and leadership of the Kingdom of Saudi Arabia.
           </p>
-          <p className="text-xs mt-2" style={{ color: 'rgba(201,150,44,0.5)' }}>
+          <p className="text-xs mt-2" style={{ color: 'rgba(11,26,51,0.5)' }}>
             * Official portraits not shown. Client to provide approved photos from Saudi government photo bank for final publication.
           </p>
         </div>
@@ -66,9 +66,9 @@ const VisionaryLeadership = () => {
             <div key={l.name}
               className="p-8 rounded-2xl text-center relative overflow-hidden scroll-reveal"
               style={{
-                background: 'rgba(20,36,69,0.7)',
-                border: '1px solid rgba(201,150,44,0.2)',
-                backdropFilter: 'blur(16px)',
+                background: '#FAF7F2',
+                border: '1.5px solid rgba(11,26,51,0.08)',
+                boxShadow: '0 8px 32px rgba(11,26,51,0.04)',
                 animationDelay: `${i * 0.15}s`,
               }}>
               {/* Decorative gold frame motif (top corners) */}
@@ -89,11 +89,11 @@ const VisionaryLeadership = () => {
               </div>
 
               <Quote size={24} className="mx-auto mb-4" style={{ color: 'rgba(201,150,44,0.4)' }} />
-              <blockquote className="text-white/90 mb-6 leading-relaxed italic"
-                style={{ fontFamily: 'Playfair Display, serif', fontSize: '1rem' }}>
+              <blockquote className="mb-6 leading-relaxed italic"
+                style={{ fontFamily: 'Playfair Display, serif', fontSize: '1rem', color: '#0B1A33' }}>
                 "{l.quote}"
               </blockquote>
-              <div className="h-px mb-4" style={{ background: 'linear-gradient(90deg, transparent, rgba(201,150,44,0.3), transparent)' }} />
+              <div className="h-px mb-4" style={{ background: 'linear-gradient(90deg, transparent, rgba(11,26,51,0.15), transparent)' }} />
               <p className="font-bold text-sm" style={{ color: '#C9962C' }}>{l.name}</p>
             </div>
           ))}

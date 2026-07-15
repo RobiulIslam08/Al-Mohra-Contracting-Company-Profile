@@ -60,7 +60,7 @@ const LegalDocuments = () => {
       icon: Building,
       title: 'Commercial Extract (Ministry of Commerce)',
       fields: [
-        { label: 'Trade Name', value: 'Al Mohra Contracting Company (شركة آل موهرا كونتراكتينج)' },
+        { label: 'Trade Name', value: 'Al Mohra Contracting Company (شركة آل موهরা كونتراكتينج)' },
         { label: 'Entity Type', value: 'Limited Liability Company (One Person)' },
         { label: 'Capital', value: 'SAR 3,000,000.00' },
         { label: 'Activity', value: 'Building General Construction for Residential Buildings (Code: 410010)' },
@@ -93,7 +93,7 @@ const LegalDocuments = () => {
   ];
 
   return (
-    <section id="legal" className="w-full py-24" style={{ background: '#FAF7F2' }}>
+    <section id="legal" className="w-full py-24" style={{ background: '#ffffff' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14 scroll-reveal">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl mb-6"
@@ -113,11 +113,11 @@ const LegalDocuments = () => {
           {LEGAL_ITEMS.map((item, i) => (
             <div key={item.title}
               className={`p-7 rounded-2xl scroll-reveal stagger-${(i % 6) + 1} card-light`}
-              style={{ border: '1.5px solid rgba(11,26,51,0.08)', boxShadow: '0 8px 32px rgba(11,26,51,0.06)' }}>
+              style={{ border: '1.5px solid rgba(11,26,51,0.08)', boxShadow: '0 8px 32px rgba(11,26,51,0.06)', background: '#FAF7F2' }}>
               <div className="flex items-center gap-3 mb-5 pb-4"
                 style={{ borderBottom: '1px solid rgba(11,26,51,0.06)' }}>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center"
-                  style={{ background: 'rgba(201,150,44,0.1)', border: '1px solid rgba(201,150,44,0.2)' }}>
+                  style={{ background: 'rgba(201,150,44,0.15)', border: '1px solid rgba(201,150,44,0.3)' }}>
                   <item.icon size={18} style={{ color: '#C9962C' }} />
                 </div>
                 <h3 className="font-bold text-sm" style={{ fontFamily: 'Playfair Display, serif', color: '#0B1A33' }}>
@@ -142,12 +142,12 @@ const LegalDocuments = () => {
 
 const QualityAssurance = () => (
   <section id="qa-qc" className="w-full py-24 relative"
-    style={{ background: 'linear-gradient(135deg, #060e1c, #0B1A33)' }}>
-    <div className="w-full h-px absolute top-0" style={{ background: 'linear-gradient(90deg, transparent, #C9962C, transparent)' }} />
+    style={{ background: '#FAF7F2' }}>
+    <div className="w-full h-px absolute top-0" style={{ background: 'linear-gradient(90deg, transparent, rgba(201,150,44,0.3), transparent)' }} />
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-14 scroll-reveal">
         <p className="section-label mb-4">QA / QC</p>
-        <h2 className="section-title text-white mb-4">
+        <h2 className="section-title-dark mb-4">
           Quality Assurance &<br />
           <span style={{ color: '#C9962C' }}>Excellence in Every Detail</span>
         </h2>
@@ -160,14 +160,14 @@ const QualityAssurance = () => (
           { title: 'International Quality Standards Compliance', desc: 'We adhere to globally recognized QA/QC processes and benchmark best practices in every engagement.' },
         ].map((c, i) => (
           <div key={c.title}
-            className={`p-7 rounded-2xl card-dark scroll-reveal stagger-${i+1}`}
-            style={{ background: 'rgba(20,36,69,0.7)', border: '1px solid rgba(201,150,44,0.12)' }}>
+            className={`p-7 rounded-2xl scroll-reveal stagger-${i+1}`}
+            style={{ background: '#ffffff', border: '1.5px solid rgba(11,26,51,0.08)', boxShadow: '0 8px 32px rgba(11,26,51,0.04)' }}>
             <div className="w-8 h-8 rounded-full flex items-center justify-center mb-5"
-              style={{ background: 'rgba(201,150,44,0.2)', border: '1px solid rgba(201,150,44,0.4)' }}>
+              style={{ background: 'rgba(201,150,44,0.15)', border: '1px solid rgba(201,150,44,0.3)' }}>
               <span className="font-black text-sm" style={{ color: '#C9962C' }}>{i+1}</span>
             </div>
-            <h3 className="font-bold text-white mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>{c.title}</h3>
-            <p className="text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.55)' }}>{c.desc}</p>
+            <h3 className="font-bold mb-3" style={{ fontFamily: 'Playfair Display, serif', color: '#0B1A33' }}>{c.title}</h3>
+            <p className="text-sm leading-relaxed" style={{ color: 'rgba(11,26,51,0.65)' }}>{c.desc}</p>
           </div>
         ))}
       </div>
@@ -179,7 +179,7 @@ const QualityAssurance = () => (
           </span>
         ))}
       </div>
-      <div className="w-full h-px mt-14" style={{ background: 'linear-gradient(90deg, transparent, #C9962C, transparent)' }} />
+      <div className="w-full h-px mt-14" style={{ background: 'linear-gradient(90deg, transparent, rgba(201,150,44,0.3), transparent)' }} />
     </div>
   </section>
 );

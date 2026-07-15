@@ -67,17 +67,17 @@ const CompetitiveEdge = () => (
       </div>
 
       {/* Badge stats strip */}
-      <div className="p-6 rounded-2xl scroll-reveal"
-        style={{ background: 'linear-gradient(135deg, #0B1A33, #142445)', border: '1px solid rgba(201,150,44,0.2)' }}>
+      <div className="p-6 rounded-2xl scroll-reveal bg-white"
+        style={{ border: '1.5px solid rgba(11,26,51,0.08)', boxShadow: '0 8px 32px rgba(11,26,51,0.04)' }}>
         <p className="text-center text-xs font-black uppercase tracking-widest mb-6" style={{ color: '#C9962C' }}>
           YOUR VISION. OUR COMMITMENT. — Building a Stronger Tomorrow Together.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {BADGE_STATS.map(({ value, label }, i) => (
             <div key={label} className="text-center py-4"
-              style={{ borderRight: i < 3 ? '1px solid rgba(255,255,255,0.07)' : 'none' }}>
-              <p className="counter-value font-black text-3xl mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>{value}</p>
-              <p className="text-xs text-white/55">{label}</p>
+              style={{ borderRight: i < 3 ? '1px solid rgba(11,26,51,0.08)' : 'none' }}>
+              <p className="counter-value font-black text-3xl mb-1" style={{ fontFamily: 'Playfair Display, serif', color: '#0B1A33' }}>{value}</p>
+              <p className="text-xs text-[#0B1A33]/70">{label}</p>
             </div>
           ))}
         </div>

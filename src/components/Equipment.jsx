@@ -57,14 +57,14 @@ const Leadership = () => (
       </div>
 
       {/* Footer value strip */}
-      <div className="p-5 rounded-2xl scroll-reveal"
-        style={{ background: 'linear-gradient(135deg, #0B1A33, #142445)', border: '1px solid rgba(201,150,44,0.15)' }}>
+      <div className="p-5 rounded-2xl scroll-reveal bg-white"
+        style={{ border: '1.5px solid rgba(11,26,51,0.08)', boxShadow: '0 8px 32px rgba(11,26,51,0.04)' }}>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {FOOTER_VALUES.map(({ title, sub }, i) => (
             <div key={title} className="text-center py-3"
-              style={{ borderRight: i < 3 ? '1px solid rgba(255,255,255,0.07)' : 'none' }}>
+              style={{ borderRight: i < 3 ? '1px solid rgba(11,26,51,0.08)' : 'none' }}>
               <p className="font-black text-xs tracking-widest uppercase mb-1" style={{ color: '#C9962C' }}>{title}</p>
-              <p className="text-xs" style={{ color: 'rgba(255,255,255,0.45)' }}>{sub}</p>
+              <p className="text-xs" style={{ color: 'rgba(11,26,51,0.65)' }}>{sub}</p>
             </div>
           ))}
         </div>

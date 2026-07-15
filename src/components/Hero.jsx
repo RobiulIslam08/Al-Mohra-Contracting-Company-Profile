@@ -107,7 +107,7 @@ const Hero = () => {
                   <ArrowRight size={16} />
                 </Link>
                 <Link to="/contact" className="btn-outline-gold">
-                  Request Quotation
+                  Apply Online
                 </Link>
               </div>
 

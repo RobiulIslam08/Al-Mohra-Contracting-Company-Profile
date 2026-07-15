@@ -20,13 +20,13 @@ import Equipment from '../components/Equipment';
 const PDFDownloadSection = () => (
   <section className="w-full py-16 relative" style={{ background: '#FAF7F2' }}>
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="p-10 rounded-2xl text-center scroll-reveal"
-        style={{ background: 'linear-gradient(135deg, #0B1A33, #142445)', border: '1px solid rgba(201,150,44,0.2)' }}>
+      <div className="p-10 rounded-2xl text-center scroll-reveal bg-white"
+        style={{ border: '1.5px solid rgba(11,26,51,0.08)', boxShadow: '0 8px 32px rgba(11,26,51,0.04)' }}>
         <p className="section-label mb-4" style={{ color: '#C9962C' }}>Company Profile 2026</p>
-        <h2 className="text-white font-bold text-2xl mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>
+        <h2 className="font-bold text-2xl mb-3" style={{ fontFamily: 'Playfair Display, serif', color: '#0B1A33' }}>
           Al Mohra Contracting Company Profile
         </h2>
-        <p className="text-sm mb-2" style={{ color: 'rgba(255,255,255,0.6)' }}>
+        <p className="text-sm mb-2" style={{ color: 'rgba(11,26,51,0.65)' }}>
           65 Pages · Full Company Profile · Quality | Strength | Trust
         </p>
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg mb-8 text-xs font-bold"
@@ -44,7 +44,7 @@ const PDFDownloadSection = () => (
             Request Profile via Email
           </a>
         </div>
-        <p className="text-[10px] mt-4" style={{ color: 'rgba(255,255,255,0.3)' }}>
+        <p className="text-[10px] mt-4" style={{ color: 'rgba(11,26,51,0.4)' }}>
           Updated profile PDF will be available upon client approval. Contact us to receive the full digital profile.
         </p>
       </div>
@@ -62,27 +62,27 @@ const BuildingFutureCTA = () => {
   ];
   return (
     <section className="w-full py-24 relative overflow-hidden"
-      style={{ background: 'linear-gradient(135deg, #060e1c, #0B1A33)' }}>
-      <div className="orb orb-gold absolute" style={{ width: '500px', height: '500px', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', opacity: 0.06 }} />
+      style={{ background: '#FAF7F2' }}>
+      <div className="orb orb-gold absolute" style={{ width: '500px', height: '500px', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', opacity: 0.04 }} />
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14 scroll-reveal">
           <p className="section-label mb-4">Together We Build</p>
-          <h2 className="section-title text-white mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+          <h2 className="section-title-dark mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
             Building the Future <span style={{ color: '#C9962C' }}>Together</span>
           </h2>
           <span className="gold-divider mx-auto block mb-6" />
-          <p className="text-base leading-relaxed max-w-2xl mx-auto italic" style={{ color: 'rgba(255,255,255,0.7)', fontFamily: 'Playfair Display, serif' }}>
+          <p className="text-base leading-relaxed max-w-2xl mx-auto italic" style={{ color: '#0B1A33', fontFamily: 'Playfair Display, serif' }}>
             "At Al Mohra Contracting Company, every project is a partnership. We bring expertise, dedication, and an uncompromising standard of quality to everything we do. Partner with us to turn your visionary projects into reality."
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
           {VALUES.map((v, i) => (
             <div key={v.title}
-              className={`p-6 rounded-2xl text-center card-dark scroll-reveal stagger-${i+1}`}
-              style={{ background: 'rgba(20,36,69,0.7)', border: '1px solid rgba(201,150,44,0.12)' }}>
+              className={`p-6 rounded-2xl text-center scroll-reveal stagger-${i+1}`}
+              style={{ background: '#ffffff', border: '1.5px solid rgba(11,26,51,0.08)', boxShadow: '0 8px 32px rgba(11,26,51,0.04)' }}>
               <div className="w-2 h-2 rounded-full mx-auto mb-4 animate-gold-pulse" style={{ background: '#C9962C' }} />
-              <h3 className="font-bold text-white text-sm mb-2">{v.title}</h3>
-              <p className="text-xs" style={{ color: 'rgba(255,255,255,0.5)' }}>{v.desc}</p>
+              <h3 className="font-bold text-[#0B1A33] text-sm mb-2">{v.title}</h3>
+              <p className="text-xs" style={{ color: 'rgba(11,26,51,0.6)' }}>{v.desc}</p>
             </div>
           ))}
         </div>

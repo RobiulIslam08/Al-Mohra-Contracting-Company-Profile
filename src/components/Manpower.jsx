@@ -114,11 +114,11 @@ const Manpower = () => {
         {/* Bottom stats */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 scroll-reveal">
           {BOTTOM_STATS.map((s, i) => (
-            <div key={s.label} className="p-6 rounded-2xl text-center"
-              style={{ background: 'linear-gradient(135deg, #0B1A33, #142445)', border: '1px solid rgba(201,150,44,0.15)' }}>
-              <p className="counter-value font-black text-3xl mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>{s.value}</p>
-              <p className="text-white font-bold text-sm mb-1">{s.label}</p>
-              <p className="text-xs" style={{ color: 'rgba(255,255,255,0.45)' }}>{s.sub}</p>
+            <div key={s.label} className="p-6 rounded-2xl text-center bg-white"
+              style={{ border: '1.5px solid rgba(11,26,51,0.08)', boxShadow: '0 8px 32px rgba(11,26,51,0.04)' }}>
+              <p className="counter-value font-black text-3xl mb-1" style={{ fontFamily: 'Playfair Display, serif', color: '#C9962C' }}>{s.value}</p>
+              <p className="font-bold text-sm mb-1" style={{ color: '#0B1A33' }}>{s.label}</p>
+              <p className="text-xs" style={{ color: 'rgba(11,26,51,0.6)' }}>{s.sub}</p>
             </div>
           ))}
         </div>

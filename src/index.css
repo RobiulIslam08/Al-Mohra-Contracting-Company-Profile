@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 /* Tailwind CSS v4 */
 @import "tailwindcss";
 
@@ -6,9 +7,6 @@
    Luxury Industrial: Navy #0B1A33 + Gold #C9962C
    Fonts: Playfair Display (serif headings) + Inter (sans body)
    ============================================================ */
-
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
   /* Core Palette */

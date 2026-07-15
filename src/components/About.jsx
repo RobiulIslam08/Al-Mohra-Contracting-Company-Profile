@@ -37,21 +37,21 @@ const About = () => (
 
         {/* CEO */}
         <div className="scroll-reveal-left p-8 rounded-2xl relative overflow-hidden"
-          style={{ background: 'linear-gradient(135deg, #0B1A33 0%, #142445 100%)', border: '1px solid rgba(201,150,44,0.2)' }}>
-          <div className="absolute top-0 right-0 w-40 h-40 rounded-full opacity-10"
-            style={{ background: 'radial-gradient(circle, #C9962C, transparent)', transform: 'translate(40%, -40%)' }} />
+          style={{ background: '#ffffff', border: '1.5px solid rgba(11,26,51,0.1)', boxShadow: '0 8px 32px rgba(11,26,51,0.08)' }}>
+          <div className="absolute top-0 right-0 w-40 h-40 rounded-full opacity-5"
+            style={{ background: 'radial-gradient(circle, #0B1A33, transparent)', transform: 'translate(40%, -40%)' }} />
           <Quote size={32} style={{ color: 'rgba(201,150,44,0.3)', marginBottom: '1rem' }} />
-          <blockquote className="text-white/90 text-sm leading-relaxed mb-6 italic"
+          <blockquote className="text-gray-700 text-sm leading-relaxed mb-6 italic"
             style={{ fontFamily: 'Playfair Display, serif', fontSize: '1.05rem', lineHeight: 1.7 }}>
             "Welcome to Al Mohra Contracting Company. Since our establishment, we have been driven by a clear mission: to deliver world-class contracting solutions with unwavering commitment to quality, safety, and reliability. We take pride in contributing to Saudi Arabia's Vision 2030 by supporting mega-projects and nation-building initiatives that shape the future of this great Kingdom."
           </blockquote>
           <div className="flex items-center gap-4">
             <div className="w-10 h-10 rounded-full flex items-center justify-center font-black text-lg"
-              style={{ background: 'rgba(201,150,44,0.2)', border: '1px solid rgba(201,150,44,0.4)', color: '#C9962C', fontFamily: 'Playfair Display, serif' }}>
+              style={{ background: 'rgba(11,26,51,0.08)', border: '1px solid rgba(11,26,51,0.15)', color: '#0B1A33', fontFamily: 'Playfair Display, serif' }}>
               A
             </div>
             <div>
-              <p className="font-bold text-white text-sm">Mr. Ariful Islam</p>
+              <p className="font-bold text-sm" style={{ color: '#0B1A33' }}>Mr. Ariful Islam</p>
               <p className="text-xs tracking-wider" style={{ color: '#C9962C' }}>Chief Executive Officer (CEO)</p>
             </div>
           </div>
